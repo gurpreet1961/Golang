@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>restaurant</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+</head>
+<body> 
+<header>
+	<!--create header navbar -->
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container-fluid">
+			<!--add logo-->
+			<div class="navbar-header">
+				<a href="index.html" class="pull-left visible-lg visible-md ">
+					<div id="logo-img" alt="Logo image"></div>
+				</a>
+
+
+            <!-- add name -->
+				<div class="navbar-brand">
+					<a href="index.html"><h1>Restaurant Name</h1></a>
+					
+				</div>
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li class="visible-xs active">
+						<a href="index.html">
+							<span class="glyphicon glyphicon-home"></span> Home
+						</a>
+					</li>
+					<li>
+						<a href="menu-category.html">
+							<span class="glyphicon glyphicon-cutlery
+"></span>
+							<br class="hidden-xs"> Menu
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign"></span>
+							<br class="hidden-xs"> About
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-certificate"></span>
+							<br class="hidden-xs"> Awards
+						</a>
+					</li>
+					<li id="phone" class="hidden-xs">
+					<a href="tel:821-932-5594">
+						<span>821-932-5594</span>
+					</a><div>*Call Now!!</div>
+				 </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
+<div id="Call-btn" class="visible-xs">
+	<a class="btn" href="tel:821-932-5594">
+		<span class="glyphicon glyphicon-earphone"></span>
+		821-932-5594
+	</a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">Call Now!!</div>
+
+
+
+
+
+
+
+<div id="main-content" class="container">
+	
+	<!--Jumbotron--><div class="jumbotron">
+		<img src="images/IMG_20200803_165517.jpg" alt="Pic"
+		class="img-responsive visible-xs">
+	</div>
+
+
+	<div id="Home-tiles" class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="menu-category.html">
+				<div id="menu-tile"><span>menu</span></div>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="single-category.html">
+				<div id="specials-tile"><span>specials</span></div>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<a href="https://goo.gl/maps/xcBGyynmDT98JaLC9" target="_blank">
+				<div id="map-tile">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48844.249408273485!2d77.24220218145616!3d31.15036153167376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905832935bdca1d%3A0x5b37bf4745def74!2sThe%20alpine%20woods%20kufri!5e0!3m2!1sen!2sin!4v1608890098066!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><span>Map</span></div>
+			</a>
+		</div>
+	</div><!--End of #home-tile-->
+</div><!-- End of #main-containt -->
+
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+			<section id="hours" class="col-sm-4">
+				<span >Hours:</span>
+				<br>Sun-Thurs: 11:15am - 10:00pm <br>Fri: 11:15am - 2:30pm<br>
+				Saturday Closed
+				<hr class="visible-xs">
+			</section>
+
+			<section id="address" class="col-sm-4">
+			<span>Address:</span><br> 7105 Reisterstown Road <br> Baltimore, MD 21215
+			<p>* Delivery area within 3-4 miles, with minimum order of $20+ $3 charge for all delivery.</p> 
+			<hr class="visible-xs">
+		</section>
+<div class="text-center">&copy; Copyright Gurpreet Singh 2001</div>
+	</div>
+		<section id="testimonials" class="col-sm-4 text-center">
+				<p>
+	</p>
+				<p><div class="centerdiv">
+	<a href="https://www.facebook.com/gurpreetSingh544" target="_blank" >
+		<i class="fa fa-2x fa-facebook"></i>
+	</a>
+	<a href="https://www.instagram.com/gurpreet_g_s/" target="_blank">
+		<i class="fa fa-2x fa-instagram"></i>
+	</a>
+	<a href="https://twitter.com/Gurpree80382652" target="_blank" >
+	<i class="fa fa-2x fa-twitter"></i> </a>
+	<a href="https://www.linkedin.com/in/gurpreet-singh-50790a1ab/" target="_blank">
+	<i class="fa fa-linkedin"></i></a>
+	<a href="https://www.youtube.com/channel/UCmU8jF9Xz09DxLTVzkAUK3w" target="_blank">
+		<i class="fa fa-2x fa-youtube"></i>
+	</a>
+	
+</div>
+</p>
+
+			</section>
+			
+		</div>
+
+		
+</footer>
+
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
