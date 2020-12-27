@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Bootstrap Example</title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.mi
-n.css">
- <link rel="stylesheet" type="text/css" href="style.css">
- 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>restaurant</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
 </head>
-<body>
-<nav class="navbar navbar-inverse">
- <div class="container-fluid">
- <div class="navbar-header">
- <button type="button" class="navbar-toggle" datatoggle="collapse" data-target="#myNavbar">
- <span class="icon-bar"></span>
- <span class="icon-bar"></span>
- <span class="icon-bar"></span>
- </button>
- <a class="navbar-brand" href="#" >Food, LLC</a>
- </div>
- <div class="collapse navbar-collapse" id="myNavbar">
+<body> 
 
- <ul class="nav navbar-nav navbar-right" >
- <li style>
- <a href="#" >
- <span class="glyphicon glyphicon-cutlery"></span> chicken</a>
- </li>
- <li>
- <a href="#" >
- <span class="glyphicon glyphicon-info-sign"></span> beef</a>
- </li>
- <li>
- <a href="#">
- <span class="glyphicon glyphicon-certificate"></span>
-sushi</a>
- </li>
- </ul>
- </div>
- </div>
-</nav>
-<br>
-<br>
+<header>
+	<!--create header navbar -->
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container-fluid">
+			
+
+            <!-- add name -->
+				<div class="navbar-brand">
+					<a href="index.html"><h1>Food,LLC</h1></a>
+					
+				</div>
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					
+					<li>
+						<a class=" visible-xs " href="#">
+							
+							<br class="hidden-xs"> Chicken
+						</a>
+					</li>
+					<li>
+						<a class=" visible-xs " href="#">
+							
+							<br class="hidden-xs"> Beef
+						</a>
+					</li>
+					<li>
+						<a class=" visible-xs " href="#">
+							
+							<br class="hidden-xs"> Sushi
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
 <h1><p class="text-center">Our Menu</p></h1>
 <div id="main-content" class="container">
  <div id="home-tiles" class="row">
  <div class="col-md-12 col-sm-12 col-xs-12">
+
 
  <p id="chickstory">
  <h2>Chicken</h2>
@@ -144,11 +164,8 @@ his enemy. Would this door save his hide?
  </div>
  </div>
 </div>
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
-></script>
- <script
-src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.
-js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

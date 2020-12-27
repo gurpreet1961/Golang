@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.navbar{
+
+border: none;
+background-color: black;
+color: #61122F;
+}
+body{
+	background-color: #61122F;
+	color: white;
+}
+.glyphicon{
+	font-size: 30px;
+	color:#61122F; 
+}
+
+.center{
+	width: 90%;
+	background-color: grey;
+
+}
+.container
+{
+	background-color: grey;
+}
+.text-center{
+	font-size: 30px;
+}
+
+h2{
+	text-align: center;
+}
+#myNavbar ul li a {
+	color: #61122F;
+}
+.navbar-brand{
+padding-top: 15px;
+	color: green;	
+}
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+
+	color: white;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a: focus {
+	text-decoration: none;
+}
+
+
+@media (max-width: 767px){
+
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+
+	}
+
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	#collapsable-nav {
+			font-size: 1.2em;
+			text-align: center;
+		}
+	
+}
+@media (max-width: 479px) {
+	.navbar-brand {
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#collapsable-nav {
+			font-size: 1.2em;
+			text-align: center;
+		} }
