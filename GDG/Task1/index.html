@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Task1</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: black;
+			}
+
+			#head {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<h1 id="head"></h1>
+		</div>
+
+		<script>
+			let option = prompt(
+				"Enter option \n1. Get Weather \n2.Get Wind Speed \n3.Get Pressure \n0.Exit"
+			);
+			if (option != "0") {
+				let date = prompt("Enter date (yyyy-mm-dd hh:mm:ss)");
+				console.log(date);
+				fetch(
+					"https://samples.openweathermap.org/data/2.5/forecast/hourly?q=London,us&appid=b6907d289e10d714a6e88b30761fae22"
+				)
+					.then((response) => {
+						return response.json();
+					})
+					.then((data) => {
+						let count = 0;
+						let find = false;
+						for (i in data.list) {
+							if (data.list[i]["dt_txt"] == date) {
+								count = i;
+								find = true;
+								break;
+							}
+						}
+						if (find) {
+							while (option != 0) {
+								count = parseInt(count);
+								let end = count + 24;
+								console.log(end);
+								switch (option) {
+									case "1":
+										alert(
+											"Weather on " +
+												data.list[count]["dt_txt"] +
+												"\nTemp: " +
+												data.list[count]["main"]["temp"]
+										);
+
+										option = prompt(
+											"Enter option \n1. Get Weather \n2.Get Wind Speed \n3.Get Pressure \n0.Exit"
+										);
+										if (option != 0) {
+											date = prompt("Enter date yyyy-mm-dd");
+										} else {
+											document.getElementById("head").innerText =
+												"Exit \nPlzz reload to try again";
+										}
+										break;
+									case "2":
+										alert(
+											"Wind Speed on: " +
+												data.list[count]["dt_txt"] +
+												"\nWind Speed: " +
+												data.list[count]["wind"]["speed"]
+										);
+										option = prompt(
+											"Enter option \n1. Get Weather \n2.Get Wind Speed \n3.Get Pressure \n0.Exit"
+										);
+										if (option != 0) {
+											date = prompt("Enter date yyyy-mm-dd");
+										} else {
+											document.getElementById("head").innerText =
+												"Exit \nPlzz reload to try again";
+										}
+										break;
+									case "3":
+										alert(
+											"Pressure on " +
+												data.list[count]["dt_txt"] +
+												"\nPressure: " +
+												data.list[count]["main"]["pressure"]
+										);
+										option = prompt(
+											"Enter option \n1. Get Weather \n2.Get Wind Speed \n3.Get Pressure \n0.Exit"
+										);
+										if (option != 0) {
+											date = prompt("Enter date yyyy-mm-dd");
+										} else {
+											document.getElementById("head").innerText =
+												"Exit \nPlzz reload to try again";
+										}
+										break;
+									default:
+										alert("Enter Correct Option");
+										option = prompt(
+											"Enter option \n1. Get Weather \n2.Get Wind Speed \n3.Get Pressure \n0.Exit"
+										);
+										if (option != 0) {
+											date = prompt("Enter date yyyy-mm-dd");
+										} else {
+											document.getElementById("head").innerText =
+												"Exit \nPlzz reload to try again";
+										}
+										break;
+								}
+							}
+						} else {
+							document.getElementById("head").innerText =
+								"Error! Date Not Found \nPlzzz reload to try again.";
+						}
+					});
+			} else {
+				document.getElementById("head").innerText =
+					"Exit\nPlzzz reload to try again.";
+			}
+		</script>
+	</body>
+</html>
